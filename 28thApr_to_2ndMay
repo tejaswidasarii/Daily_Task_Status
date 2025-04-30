@@ -1,0 +1,7 @@
+|Date                | Tasks                 |
+|------------        | --------------------  |
+| 28th Apr 2025      | 1. Demo was done on service accounts and network policies successfully with chandru and achieved that ServiceAccounts and the tokens fetched from Kube API server with the mapped ClusterRole/Role will restrict the pods/applications mapped with the serviceAccount.
+                     | NetworkPolicies will help us to control ingress/egress traffic between pods and default pod-to-pod communication will be stopped right away and can allow traffic at the pod and namespace level.
+| 29th Apr 2025      | 1. We had a discussion with pradeep on the demo and got his comments and feedback on our approach, pradeeps comments: If using GitHub as IdP, we must assess risks of exposure, modification, and governance, and seek CISO approval due to production access.  
+                     | A ServiceAccount approach may require creating 360–720 GitHub groups for zonal/namespace users with 4 permission levels.
+| 30th Apr 2025      | 1. As per chandru's advice I have created documentation on all the progress we have done so far and started doing my research on how to optimise groups that can come around 360-720 if we consider all the zones,regions.
