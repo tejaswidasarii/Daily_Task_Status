@@ -5,3 +5,10 @@
 | 29th Apr 2025      | 1. We had a discussion with pradeep on the demo and got his comments and feedback on our approach, pradeeps comments: If using GitHub as IdP, we must assess risks of exposure, modification, and governance, and seek CISO approval due to production access.  
                      | A ServiceAccount approach may require creating 360–720 GitHub groups for zonal/namespace users with 4 permission levels.
 | 30th Apr 2025      | 1. As per chandru's advice I have created documentation on all the progress we have done so far and started doing my research on how to optimise groups that can come around 360-720 if we consider all the zones,regions.
+| 1st May 2025       | Holiday - May Day
+| 2nd May 2024       | Discussed with chandru on how to approach to a  efficient solution to manage the GitHub org + teams with the existing K8S setup. Went through his presentation 
+                     | Points we have noticed are 
+                     | * Kubernetes provides default ClusterRoles (`cluster-admin`, `admin`, `edit`, `view`) usable for RBAC; verified in Minikube.
+                     | * RoleBindings can target all service accounts in a namespace—no need for multiple bindings.
+                     | * Namespace-level permissions support reusability, reducing the need for separate GitHub teams or extra K8s resources.
+
